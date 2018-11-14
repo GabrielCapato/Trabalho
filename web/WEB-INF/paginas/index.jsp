@@ -1,3 +1,4 @@
+<%@page import="br.com.grupointegrado.model.Anuncio"%>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,10 +9,10 @@
         <title>Anúncios de Veículos</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/fontawesome.all.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style-default.css">
-        <link rel="stylesheet" type="text/css" href="css/style-index.css">
+        <link rel="stylesheet" type="text/css" href="CSS/fontawesome.all.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style-default.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style-index.css">
 
         <script>
             function abrirAnuncio(anuncioId) {
@@ -179,6 +180,22 @@
                                     </div>
                                 </td>
                             </tr>
+                            <%  int ContadorAnuncio = 1;
+                                //for(Anuncio obj : p){ //p suposto obj da requisição %>
+                            <tr class="tabela-veiculos-linha" onclick="abrirAnuncio(<%ContadorAnuncio%>)">
+                                <td class="tv-col-imagem">
+                                    <img src="<% //PATH% + //VarExt%>">                                     
+                                </td>
+                            <div class="col descricao-anuncio">
+                                <p>
+                                    <% //Nome + KM %>| <% //TipoCambio%> | <%//Combu¨%>   
+                                </p>
+                            </div>
+                            
+                            </tr>
+
+
+
                         </table>
 
                     </div>
