@@ -16,7 +16,7 @@
 
         <script>
             function abrirAnuncio(anuncioId) {
-                window.location = "anuncio.html?anuncio=" + anuncioId;
+                window.location = "anuncio?anuncio=" + anuncioId;
             }
         </script>
     </head>
@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/GerenciamentoAnuncioVeiculos/index">Início</a>
+                            <a class="nav-link" href="index">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/GerenciamentoAnuncioVeiculos/anunciar">Anunciar</a>
+                            <a class="nav-link" href="anunciar">Anunciar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/GerenciamentoAnuncioVeiculos/contato">Contato</a>
+                            <a class="nav-link" href="contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -180,20 +180,6 @@
                                     </div>
                                 </td>
                             </tr>
-                            <%  int ContadorAnuncio = 1;
-                                //for(Anuncio obj : p){ //p suposto obj da requisição %>
-                            <tr class="tabela-veiculos-linha" onclick="abrirAnuncio(<%ContadorAnuncio%>)">
-                                <td class="tv-col-imagem">
-                                    <img src="<% //PATH% + //VarExt%>">                                     
-                                </td>
-                            <div class="col descricao-anuncio">
-                                <p>
-                                    <% //Nome + KM %>| <% //TipoCambio%> | <%//Combu¨%>   
-                                </p>
-                            </div>
-                            
-                            </tr>
-
 
 
                         </table>
